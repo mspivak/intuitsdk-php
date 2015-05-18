@@ -257,11 +257,11 @@ class SyncRestHandler extends RestHandler
 			
 			list($response_code, $response_xml, $response_headers) = $this->GetOAuthResponseHeaders($oauth);
 			$this->RequestLogging->LogPlatformRequests($response_xml, $requestUri, $response_headers, FALSE);
-			//echo "Response: {$response_code} - {$response_xml} \n";
-			//var_dump($oauth->debugInfo);
-			//echo "\n";
-			//echo "ERROR MESSAGE: " . $oauth->debugInfo['body_recv'] . "\n"; // Useful info from Intuit
-			//echo "\n";
+			echo "Response: {$response_code} - {$response_xml} \n";
+			var_dump($oauth->debugInfo);
+			echo "\n";
+			echo "ERROR MESSAGE: " . $oauth->debugInfo['body_recv'] . "\n"; // Useful info from Intuit
+			echo "\n";
 			return FALSE;
 		}
 
