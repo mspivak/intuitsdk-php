@@ -11,6 +11,9 @@
 // Determine parent path for SDK
 $sdkDir = __DIR__ . DIRECTORY_SEPARATOR;
 
+if (!defined('INTUIT_PATH_SDK_LOG'))
+	define('INTUIT_PATH_SDK_LOG', sys_get_temp_dir());
+
 if (!defined('PATH_SDK_ROOT'))
 	define('PATH_SDK_ROOT', $sdkDir);
 

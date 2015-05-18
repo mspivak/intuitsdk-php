@@ -17,7 +17,7 @@ class Logger {
 	 */
 	public function Log($idsTraceLevel, $messageToWrite)
 	{
-		file_put_contents(PATH_SDK_ROOT . 'executionlog.txt', $messageToWrite."\n", FILE_APPEND);
+		file_put_contents( INTUIT_PATH_SDK_LOG . 'intuit.log', $messageToWrite."\n", FILE_APPEND);
 	}
 }
 
