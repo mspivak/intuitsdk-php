@@ -1,5 +1,8 @@
-# OAuth-PHP
-PHP Sample for OAuth
+# Intuit PHP SDK
+
+*I'm fixing a couple issues with the Intuit SDK*
+
+Original readme:
 
 Welcome to the Intuit Developer's PHP Sample OAuth App.
 
